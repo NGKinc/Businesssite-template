@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">YourName<span>.</span></div>
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-controls">
+        <button onclick="toggleTheme()">🌙</button>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Portfolio</h1>
+</section>
+
+<div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('design')">Design</button>
+    <button onclick="filterProjects('dev')">Development</button>
+</div>
+
+<section class="portfolio-grid">
+    <div class="project design">Landing Page Design</div>
+    <div class="project dev">E-commerce Website</div>
+    <div class="project design">Brand Website</div>
+    <div class="project dev">Web App</div>
+</section>
+
+<footer>
+    <p>© 2026 YourName.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
